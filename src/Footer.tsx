@@ -30,6 +30,20 @@ export default function Footer() {
                 Nginep <span className="text-amber-400">Boss</span>
               </p>
               <FlexContent normal>website to find hotel recommendations at prices that suit your wishes</FlexContent>
+              <div className="flex gap-4 pt-4">
+                <div className="w-12 h-12 rounded-full bg-amber-400 flex items-center justify-center mb-4">
+                  <FaFacebook size={30} />
+                </div>
+                <div className="w-12 h-12 rounded-full bg-amber-400 flex items-center justify-center mb-4">
+                  <FaInstagram size={30} />
+                </div>
+                <div className="w-12 h-12 rounded-full bg-amber-400 flex items-center justify-center mb-4">
+                  <FaTwitter size={30} />
+                </div>
+                <div className="w-12 h-12 rounded-full bg-amber-400 flex items-center justify-center mb-4">
+                  <FaLinkedin size={30} />
+                </div>
+              </div>
             </div>
           </FlexBox>
         )}

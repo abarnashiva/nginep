@@ -20,7 +20,7 @@ export default function Paragraph({
   const defaultText = large
     ? "text-lg pb-6"
     : copyText
-      ? "text-white text-center py-2"
+      ? "text-white py-2"
       : "text-gray-700 py-4";
 
   return (
@@ -28,7 +28,6 @@ export default function Paragraph({
       {words.map((word, index) => (
         <span
           key={index}
-          className={`${word === "PRAXIO" ? "font-semibold" : ""}`}
         >
           {word}{" "}
         </span>
