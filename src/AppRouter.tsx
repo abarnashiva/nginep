@@ -1,6 +1,6 @@
 import { Outlet, createBrowserRouter } from "react-router-dom";
 import HomePage from "./menu/home/page";
-import UnderDevelopment from "./menu/UnderDevelopment";
+import UnderDevelopment from "./components/UnderDevelopment";
 
 export const router = createBrowserRouter([
   {
