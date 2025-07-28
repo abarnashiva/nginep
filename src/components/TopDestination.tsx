@@ -3,12 +3,12 @@ import { MdOutlineCalendarMonth, MdOutlineLocationOn } from "react-icons/md";
 import { BiDollarCircle } from "react-icons/bi";
 
 const destinations = [
-  "Jawa",
-  "Sumatera",
-  "Kalimantan",
-  "Sulawesi",
-  "NTB",
-  "NTT",
+  { name: "Jawa", image: "/images/jawa.jpg" },
+  { name: "Sumatera", image: "/images/sumatera.avif" },
+  { name: "Kalimantan", image: "/images/kalimantan.jpg" },
+  { name: "Sulawesi", image: "/images/sulawesi.jpg" },
+  { name: "NTB", image: "/images/ntb.jpg" },
+  { name: "NTT", image: "/images/ntt.jpg" },
 ];
 
 export default function TopDestinations() {
@@ -23,12 +23,12 @@ export default function TopDestinations() {
 
       {/* Destination Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10 py-10">
-        {destinations.map((name, idx) => (
+        {destinations.map(({ name, image }, idx) => (
           <div
             key={idx}
             className="bg-gray-200 rounded-xl flex flex-col justify-end overflow-hidden relative"
           >
-            <img src="/images/gray.jpg" />
+            <img src={image} alt={name} className="w-full h-60 object-cover" />
             <div className="bg-gray-700/80 text-white px-4 py-3 flex justify-between items-center">
               <div>
                 <p className="font-semibold text-lg">{name}</p>

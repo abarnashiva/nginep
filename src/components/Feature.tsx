@@ -27,18 +27,21 @@ const hotels = [
     price: "$250",
     rating: "5.9",
     location: "Lampung Tengah, Bandar Lampung 34114",
+    image: "/images/image1.jpeg"
   },
   {
     name: "OYI",
     price: "$350",
     rating: "7.5",
     location: "Kota Metro, Lampung 34114",
+    image: "/images/image2.jpg"
   },
   {
     name: "SekNO",
     price: "$150",
     rating: "5.9",
     location: "Lampung Tengah, Bandar Lampung 34114",
+    image: "/images/image3.webp"
   },
 ];
 
@@ -70,8 +73,8 @@ export default function Feature() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10 py-10">
         {hotels.map((hotel, idx) => (
           <div key={idx} className="rounded-xl shadow-md text-left h-full w-full flex flex-wrap">
-            <div className="bg-gray-200 rounded-t-lg">
-              <img src="/images/gray.jpg" className="rounded-t-lg" />
+            <div className="bg-gray-300 rounded-t-lg">
+              <img src={hotel.image} className="rounded-t-lg" />
             </div>
             <div className="p-4 w-full">
               <div className="flex justify-between items-center mb-2">

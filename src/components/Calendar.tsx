@@ -17,7 +17,6 @@ export default function Calendar() {
                     <FaArrowRight />
                 </button>
             </div>
-            <div className="bg-gray-400 rounded-b-xl"></div>
         </div>
     );
 }

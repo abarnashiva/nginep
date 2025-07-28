@@ -7,20 +7,24 @@ const blogs = [
     category: "Hotel Booking",
     views: "1K",
     date: "12 Jan, 2024",
+    image: "/images/hotel-deals.webp",
   },
   {
     title: "The Benefit of Early Hotel Reservation",
     category: "Hotel Booking",
     views: "3K",
     date: "12 Jan, 2024",
+    image: "/images/early-hotel.jpg",
   },
   {
     title: "The Art of Picking the Perfect Hotel Location for your Trip",
     category: "Hotel Booking",
     views: "1K",
     date: "12 Jan, 2024",
+    image: "/images/perfect-hotel.jpg",
   },
 ];
+
 
 const testimonials = [
   {
@@ -57,7 +61,11 @@ export default function BlogAndTestimonials() {
       <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-10 gap-6 mb-16 py-10">
         {blogs.map((blog, idx) => (
           <div key={idx} className="bg-white rounded-xl shadow-md overflow-hidden text-left">
-            <div className="bg-gray-200 h-56 w-full" />
+            <img
+              src={blog.image}
+              alt={blog.title}
+              className="h-56 w-full object-cover"
+            />
             <div className="p-6">
               <span className="inline-block bg-amber-400 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">
                 {blog.category}
@@ -79,6 +87,7 @@ export default function BlogAndTestimonials() {
           </div>
         ))}
       </div>
+
 
       {/* Testimonial Section */}
       <h2 className="lg:text-4xl text-2xl font-semibold mb-8">
