@@ -31,7 +31,7 @@ export default function TopDestinations() {
           >
             <div className="bg-gray-900/70 text-white px-4 py-3 flex justify-between items-center">
               <div>
-                <p className="font-semibold text-lg">{name}</p>
+                <p className="font-semibold text-lg text-left">{name}</p>
                 <p className="text-sm text-gray-200">40 Destination</p>
               </div>
               <button className="bg-amber-400 p-2 rounded-full text-white hover:bg-amber-500">
