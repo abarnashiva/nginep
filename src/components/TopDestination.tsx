@@ -26,10 +26,10 @@ export default function TopDestinations() {
         {destinations.map(({ name, image }, idx) => (
           <div
             key={idx}
-            className="bg-gray-200 rounded-xl flex flex-col justify-end overflow-hidden relative"
+            className="bg-gray-200 rounded-xl flex flex-col justify-end overflow-hidden relative h-60 bg-cover bg-center"
+            style={{ backgroundImage: `url(${image})` }}
           >
-            <img src={image} alt={name} className="w-full h-60 object-cover" />
-            <div className="bg-gray-700/80 text-white px-4 py-3 flex justify-between items-center">
+            <div className="bg-gray-900/70 text-white px-4 py-3 flex justify-between items-center">
               <div>
                 <p className="font-semibold text-lg">{name}</p>
                 <p className="text-sm text-gray-200">40 Destination</p>
@@ -41,6 +41,7 @@ export default function TopDestinations() {
           </div>
         ))}
       </div>
+
 
       {/* Filter Bar */}
       <div className="flex md:flex-row flex-col  md:bg-white md:shadow-md md:rounded-full px-4 lg:px-10 py-4 items-center justify-between lg:gap-12 gap-6 max-w-5xl mx-auto">
