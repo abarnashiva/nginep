@@ -18,6 +18,7 @@ export default function Hero() {
         <div
             className="bg-cover bg-center bg-no-repeat p-6 lg:p-10 rounded-lg grid lg:grid-cols-2 justify-between items-center text-gray-800 lg:mt-10 mt-6"
             style={{ backgroundImage: `url('/images/background.webp')` }}
+            data-aos="zoom-in"
         >
             <div className="text-left mb-6 md:mb-0 bg-black/50 p-4 rounded lg:p-10">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl text-white font-bold mb-4 lg:py-10 py-4">

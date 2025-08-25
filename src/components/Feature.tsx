@@ -49,14 +49,14 @@ export default function Feature() {
   return (
     <section className="w-full py-12 max-w-7xl mx-auto text-center lg:mt-10">
       {/* How It Works */}
-      <h2 className="lg:text-4xl text-2xl font-semibold mb-8">
+      <h2 className="lg:text-4xl text-2xl font-semibold mb-8" data-aos="fade-up">
         How Nginep <span className="text-amber-400 font-bold">Boss</span> Works?
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:mb-16 py-10">
         {features.map((f, idx) => (
-          <div key={idx} className="flex flex-col items-center text-center">
-            <div className="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-amber-400 flex items-center justify-center mb-4">
+          <div key={idx} className="flex flex-col items-center text-center group" data-aos="zoom-in-up">
+            <div className="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-amber-400 flex items-center justify-center mb-4 scale-100 group-hover:scale-105">
               {f.icon}
             </div>
             <h3 className="text-xl font-semibold">{f.title}</h3>
@@ -66,14 +66,14 @@ export default function Feature() {
       </div>
 
       {/* Popular Hotels */}
-      <h2 className="lg:text-4xl text-2xl font-semibold lg:mb-8 lg:mt-10">
+      <h2 className="lg:text-4xl text-2xl font-semibold lg:mb-8 lg:mt-10" data-aos="fade-up">
         Our Popular <span className="text-amber-400 font-bold">Hotel</span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10 py-10">
         {hotels.map((hotel, idx) => (
-          <div key={idx} className="rounded-xl shadow-md text-left h-full w-full flex flex-wrap">
-            <div className="bg-gray-300 rounded-t-lg">
+          <div key={idx} className="rounded-xl shadow-md text-left h-full w-full flex flex-wrap hover:bg-gray-200" data-aos="zoom-in-up">
+            <div className="bg-gray-300 rounded-t-lg ">
               <img src={hotel.image} className="rounded-t-lg" />
             </div>
             <div className="p-4 w-full">

@@ -15,7 +15,7 @@ export default function TopDestinations() {
   return (
     <section className="w-full max-w-7xl mx-auto text-center">
       {/* Title */}
-      <h2 className="lg:text-4xl text-2xl font-semibold md:mb-10">
+      <h2 className="lg:text-4xl text-2xl font-semibold md:mb-10" data-aos="fade-up">
         <span className="text-orange-500 font-bold">Top Destination Choice</span>
         <br />
         <span className="text-gray-800">For You In Indonesian</span>
@@ -26,10 +26,11 @@ export default function TopDestinations() {
         {destinations.map(({ name, image }, idx) => (
           <div
             key={idx}
-            className="bg-gray-200 rounded-xl flex flex-col justify-end overflow-hidden relative h-60 bg-cover bg-center"
+            className="bg-gray-200 rounded-xl flex flex-col justify-end overflow-hidden relative h-60 bg-cover bg-center hover:shadow-lg group"
             style={{ backgroundImage: `url(${image})` }}
+            data-aos="flip-up"
           >
-            <div className="bg-gray-900/70 text-white px-4 py-3 flex justify-between items-center">
+            <div className="bg-gray-900/70 text-white px-4 py-3 flex justify-between items-center group-hover:bg-gray-900/90">
               <div>
                 <p className="font-semibold text-lg text-left">{name}</p>
                 <p className="text-sm text-gray-200">40 Destination</p>
@@ -44,7 +45,8 @@ export default function TopDestinations() {
 
 
       {/* Filter Bar */}
-      <div className="flex md:flex-row flex-col  md:bg-white md:shadow-md md:rounded-full px-4 lg:px-10 py-4 items-center justify-between lg:gap-12 gap-6 max-w-5xl mx-auto">
+      <div className="flex md:flex-row flex-col  md:bg-white md:shadow-md md:rounded-full px-4 lg:px-10 py-4 items-center justify-between lg:gap-12 gap-6 max-w-5xl mx-auto" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
         {/* Location */}
         <div className="flex items-center gap-2 text-gray-500">
           <MdOutlineLocationOn className="text-amber-500" size={30} />

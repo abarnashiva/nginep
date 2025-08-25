@@ -54,19 +54,19 @@ export default function BlogAndTestimonials() {
   return (
     <section className="w-full py-16 max-w-7xl mx-auto text-center">
       {/* Blog Section */}
-      <h2 className="lg:text-4xl text-2xl font-semibold mb-8">
+      <h2 className="lg:text-4xl text-2xl font-semibold mb-8" data-aos="fade-up">
         Our Latest <span className="text-amber-500">Blog & News</span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-10 gap-6 mb-16 py-10">
         {blogs.map((blog, idx) => (
-          <div key={idx} className="bg-white rounded-xl shadow-md overflow-hidden text-left">
+          <div key={idx} className="bg-white rounded-xl shadow-md overflow-hidden text-left group" data-aos="fade-down">
             <img
               src={blog.image}
               alt={blog.title}
               className="h-56 w-full object-cover"
             />
-            <div className="p-6">
+            <div className="p-6 group-hover:bg-gray-200">
               <span className="inline-block bg-amber-400 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">
                 {blog.category}
               </span>
@@ -90,7 +90,7 @@ export default function BlogAndTestimonials() {
 
 
       {/* Testimonial Section */}
-      <h2 className="lg:text-4xl text-2xl font-semibold mb-8">
+      <h2 className="lg:text-4xl text-2xl font-semibold mb-8" data-aos="fade-up">
         Our Customer <span className="text-amber-500">Testimonial</span>
       </h2>
 
@@ -98,7 +98,8 @@ export default function BlogAndTestimonials() {
         {testimonials.map((item, idx) => (
           <div
             key={idx}
-            className="bg-gray-100 p-6 rounded-xl text-left shadow-sm"
+            className="bg-gray-100 p-6 rounded-xl text-left shadow-sm hover:bg-gray-200 hover:shadow-lg"
+            data-aos="fade-up"
           >
             <div className="flex items-center mb-2 text-amber-400">
               {Array.from({ length: item.rating }).map((_, starIdx) => (
